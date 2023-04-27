@@ -22,8 +22,39 @@
     <link rel="stylesheet" href="/assets/css/pokedex.css">
 </head>
 
-<body>
+<body id="home">
     <section class="content">
+        <div class="pokemon-detail">
+            <section id="poke-details-modal" style="display: none;">
+                <li class="pokemon grass">
+                    <header id="poke-detail-header">
+                        <button class="btn-close-modal" onclick="closeModal()">X</button>
+                        <h1 id="detail-title-modal">Detalhes</h1>
+                    </header>
+
+                    <span class="number">#001</span>
+                    <span class="name">Bulbasaur</span>
+        
+                    <div class="details-modal">
+                        <ol class="types">
+                            <li class="type grass">Grass</li>
+                            <li class="type poison">Poison</li>
+                        </ol>
+
+                        <ol class="details">
+                            <li>Experience: 239</li>
+                            <li>Height: 16</li>
+                            <li>Weight: 855</li>
+                        </ol>
+        
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                             alt="Bulba">
+                    </div>
+                </li>
+            </section>
+
+        </div>
+
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
